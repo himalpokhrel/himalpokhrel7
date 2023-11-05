@@ -3,6 +3,8 @@
 
 :root{
     --yellow:#f9ca24;
+    --bgColor:#F7F7F7;
+    --bgColor:#00A78E;
 }
 *{
     font-family: 'Tilt Neon', sans-serif;
@@ -81,7 +83,7 @@ section{
 
 header{
     position: fixed;
-    top: 0; left: 0;
+    top: 0; left: 0; bottom: 0;
     z-index: 1000;
     height: 100%;
     width: 35rem;
@@ -93,13 +95,30 @@ header{
     text-align: center;
 }
 
+header .social-icons a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    color: white;
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+
+header .social-icons a:hover{
+    background-color: var(--bgColor);
+}
+
 header .user img{
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
     object-fit: cover;
-margin-bottom: 1rem;
-border: .7rem solid var(--yellow);
+ margin-bottom: 1rem;
+ border: .7rem solid var(--yellow);
 }
 
 header .user .name{
@@ -113,16 +132,17 @@ header .user .post{
 }
 
 header .navbar{
-    width: 100%;
+   /* width: 100%;*/
+   margin-top: 30px;
 }
 
 header .navbar ul{
     list-style: none;
-    padding: 1rem 3rem;
+   /* padding: 1rem 3rem;*/
 }
 
 
-header .navbar ul li a{
+/*header .navbar ul li a{
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
@@ -130,6 +150,28 @@ header .navbar ul li a{
     color: #fff;
     font-size: 1.5rem;
     border-radius: 5rem;
+}*/
+
+header .navbar ul li a{
+    display: block;
+    border-radius: 5rem;
+    padding: 7px 10px;
+    margin: 7px 0;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    color: lightgray;
+    display: block;
+}
+
+header .navbar ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+header .navbar ul li a:hover i{
+    color: var(--bgColor);
 }
 
 header .navbar ul li a:hover{

@@ -36,3 +36,23 @@ $(this).toggleClass('fa-times');
     });
     
 });
+
+
+/*--typedjs--*/
+var typed = new Typed(".multiple", {
+    strings: [ "Himal Pokhrel","Himal Pokhrel"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
+
+
+var typed = new Typed(".post", {
+    strings: [ "Web Developer", "YouTuber", "Graphic Designer", "Gamer", "Student"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
+
